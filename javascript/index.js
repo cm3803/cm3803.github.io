@@ -1,17 +1,19 @@
-<! DOCTYPE html>
-<html>
+$(document).ready(function(){
 
-	<head>
+	console.log("hello");
 
-		<title> Page Title! </title>
+	var myFavoriteBook = "A Raisin in the Sun";
+	console.log("My favorite book is " +myFavoriteBook)
 
-	</head>
+	/* call this function when clicked*/
 
-	<body>
+	window.onclick = changeBG;
 
-		<h1> This is a heading </h1>
-		<p> This is a paragraph </p>
+	function changeBG(){
+		document.getElementsByTagName("Body")[0].style.backgroundColor = "#C1E3B0";
+		document.getElementsByTagName("Body")[0].style.color="pink";
+	}
 
-	</body>
 
-</html>
+
+});

@@ -1,20 +1,186 @@
 body{
-	background-color:  mediumpurple;
-	color: whitesmoke;
+	background-color:  lavenderblush;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 15%;
 }
 
 h1 {
-	color:  antiquewhite;
-	font-family: 'Orelega One', cursive;
+	color:  darkorchid;
+	font-family: 'Sail', cursive;
+	font-size: 80px;
+	text-align: center;
+
+}
+
+h2 {
+	color: black; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+	color: darkorchid;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 a {
-	color: steelblue;
-	font-family: 'Luxurious Roman', cursive;
+	color: darkslateblue;
+	font-family:'Montserrat', sans-serif;
 }
 
 p {
 	color: black;
 	font-size: 20px;
-	font-family: 'Luxurious Roman', cursive;
+	line-height: 32.36px;
+	font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (min-width: 780px){
+	.full-width-img{
+		margin: auto;
+		width: 90%;
+	}
+}
+
+/* ------- Homepage Info ------- */
+
+#container{
+	flex-direction: row;
+	display: inline-flex;
+	width: 100%;
+	padding: 0%;
+	height: 50%;
+}
+
+.bio{
+	float: left;
+	margin-right: 20px;
+	transition: 800ms ease all;
+
+}
+
+.img{
+	float: right;
+	transition: 800ms ease all;
+	margin-top: 20px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: darkorchid;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	color: black;
+}
+
+
+.footer{
+	text-align: center;
+	padding: 15px;
+}
+
+#header{
+	position: fixed;
+}
+
+
+/* ------ Projects Gallery -------- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 5%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* ------------------ */
+
+
+/* whatever item included inside */
+
+/*line height = font size x 1.618
+
+/* #bioNlinks{
+	width:  100%;
+	padding:  2% 0% 0% 0%; /*top, right, bottom, left*/
+	/*align-items: center;
+	display: inline-flex;
+	background: pink;
+}
+
+.bioBox{
+	width:  60%;
+	line-height: 24px;
+	height:  auto;
+}
+
+.linkBox{
+	width: 25%;
+	height: 100px;
+	text-align: left;
+	margin-top: ;
+}
+
+*/
